@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:new_project/screens/ciclo_stateful.dart';
+import 'package:new_project/screens/ciclo_stateful_parent.dart';
+import 'package:new_project/screens/contador.dart';
 import 'package:new_project/screens/widgets_conteudo.dart';
 import 'package:new_project/screens/widgets_layout.dart';
 
@@ -38,6 +41,18 @@ class ListContents extends StatelessWidget {
       descricao: "Exemplos de widgets de layout como Padding, Align, Center...",
       destino: WidgetsLayout(),
     ),
+    CatalogoItem(
+      titulo: "Ciclo de vida stateful",
+       icone: Icons.sync,
+        descricao: "Entendendo o ciclo de vida de um widget stateful",
+         destino: CicloStatefulParent()
+         ),
+         CatalogoItem(
+          titulo: "Contador - setState",
+           icone: Icons.refresh,
+            descricao: "Exemplo de uso do setState para atualizar o estado de um widget",
+            destino: Contador(),
+            ),
   ];
 
   @override
